@@ -1,10 +1,10 @@
-import React from "react";
-import "./App.scss";
+import './App.scss';
+import { MainPage } from './pages/mainPage';
 
 function App() {
   return (
     <>
-      <h1>Hello Almaz!</h1>
+      <MainPage />
     </>
   );
 }

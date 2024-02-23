@@ -1,5 +1,144 @@
-body {
-  margin: 0;
-  padding: 0;
+$white: #fff;
+$orange: #faa831;
+$primary: #0082c5;
+
+html {
   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.header {
+  background: $primary;
+  opacity: 0.5;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.header__inner {
+  min-height: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  & li {
+    margin-right: 45px;
+  }
+  & li:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__button {
+  background: url(../assets/arrow-down.png) right 9px no-repeat;
+  padding-right: 17px;
+  color: $white;
+}
+
+.personal-area {
+  height: 55px;
+  line-height: 55px;
+  padding: 0 22px;
+  border: 2px solid $orange;
+  border-radius: 30px;
+}
+
+.top {
+  background: url(../assets/pool.jpg) bottom center no-repeat;
+  margin-top: -95px;
+}
+
+.top__inner {
+  min-height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+.top__title {
+  width: 504px;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 112%;
+  color: $orange;
+  margin: 0 0 40px 0;
+  text-shadow: $white 0 0 5px;
+}
+
+.top__text {
+  width: 683px;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 115%;
+  letter-spacing: 2px;
+  margin: 0 0 33px 0;
+}
+
+.top__bid {
+  width: 256px;
+  min-height: 70px;
+  background-color: $primary;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 70px;
+  color: $white;
+  padding: 0 50px;
+  border-radius: 10px;
+  margin-bottom: 300px;
+}
+
+.top__link {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
 }
